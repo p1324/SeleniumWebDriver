@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumwebdriver.basic.Scroll">
+      <class name="seleniumwebdriver.basic.TendablechallengeTest">
         <methods>
-          <include name="test"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyErrorMessage"/>
         </methods>
-      </class> <!-- seleniumwebdriver.basic.Scroll -->
+      </class> <!-- seleniumwebdriver.basic.TendablechallengeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

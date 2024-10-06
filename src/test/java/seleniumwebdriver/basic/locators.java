@@ -22,7 +22,8 @@ public class locators {
 
 		// by lintext and partiallinktext
 		// driver.findElement(By.linkText("Tablets")).click();
-		// driver.findElement(By.partialLinkText("Tab")).click();
+		WebElement el = driver.findElement(By.partialLinkText("Tab"));
+		el.click();
  
 		// TagName
 		List<WebElement> links = driver.findElements(By.tagName("a"));

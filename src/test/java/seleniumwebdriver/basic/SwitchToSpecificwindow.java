@@ -1,5 +1,6 @@
 package seleniumwebdriver.basic;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -19,22 +20,29 @@ public class SwitchToSpecificwindow {
 
 		Set<String> newWindow = driver.getWindowHandles();
 		List<String> childs = new ArrayList<String>(newWindow);
-		
-		driver.switchTo().window(childs.get(1));
-		System.out.println(driver.getTitle());
-		
+		System.out.println(childs.size());
+
 		/*
-		 * for(int i=0;i <childs.size();i++) { driver.switchTo().window(childs.get(i));
-		 * }
+		 * driver.switchTo().window(childs.get(1));
+		 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		 * System.out.println(driver.getTitle());
 		 */
 		
+		
+		for (int i = 0; i < childs.size(); i++) {
+			driver.switchTo().window(childs.get(i));
+			if (i==1)
+			{
+			System.out.println(driver.getTitle());
+			}
+		}
+
 		/*
 		 * for(String c:childs) {
 		 * 
 		 * }
 		 */
-		
-		
+
 	}
 
 }

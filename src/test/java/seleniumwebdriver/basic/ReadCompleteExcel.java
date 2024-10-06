@@ -15,14 +15,14 @@ public class ReadCompleteExcel {
 				"C:\\Users\\HP\\automation workplace\\seleniumwebdriver\\TestData\\Book1.xlsx");
 
 		Sheet sheet = WorkbookFactory.create(file).getSheet("Sheet1");
-		//System.out.println(sheet.getLastRowNum());//1
+		System.out.println(sheet.getLastRowNum());//1
 		for (int i = 0; i <= sheet.getLastRowNum(); i++) {
 			for (int j = 0; j < sheet.getRow(i).getLastCellNum(); j++) {
 
 				System.out.print(sheet.getRow(i).getCell(j).getStringCellValue() + " ");
 
 			}
-			System.out.println();
+		//	System.out.println();
 		}
 
 	}

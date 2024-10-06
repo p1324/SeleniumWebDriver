@@ -30,6 +30,12 @@ public class Scroll {
 		// scroll to top
 		Thread.sleep(5000);
 		js.executeScript("window.scrollTo(0,0)");
+		
+		char s='b';
+		int a;
+		a=Character.valueOf(s);
+		System.out.println(a);
+		
 	}
 	
 
