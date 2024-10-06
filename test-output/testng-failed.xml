@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumwebdriver.basic.TendablechallengeTest">
+      <class name="seleniumwebdriver.basic.DataProviderWithExcel2">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="verifyErrorMessage"/>
+          <include name="testLogin"/>
         </methods>
-      </class> <!-- seleniumwebdriver.basic.TendablechallengeTest -->
+      </class> <!-- seleniumwebdriver.basic.DataProviderWithExcel2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
